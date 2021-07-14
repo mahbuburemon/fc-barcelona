@@ -1,0 +1,197 @@
+/*............................ font awesome................................ */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* .............................Banner part............................... */
+.top-banner{
+    display: flex;
+    width: 1490px;
+    background-color: rgb(39, 39, 124);
+    padding: 30px;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 55px;
+    
+}
+
+.half-width{
+    color: #FFFFFF;
+    font-size: 30px;
+    font-weight: 700;
+    padding-top: 10px;
+  
+    
+}
+.link-button{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 20px;
+    margin: 0px 8px;
+    background-color: #E02C6D;
+    
+}
+
+.img-cover:hover{
+    transform: scale(0.6) rotate(36deg);
+    transition: transform 5s ease-in-out ;
+
+    
+}
+
+.top-banner img{
+    width: 550px;
+    margin: 10px;
+    padding: 20px;
+    
+    
+    
+    
+}
+
+/* ........................players part.......................... */
+
+main{
+    display: flex;
+    flex-direction: column;   
+    align-items: center;
+    
+}
+
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 45px;
+    margin: 21px;
+    
+    
+}
+
+.blog{
+    width: 330px;
+    height: 500px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    
+    
+   
+
+
+}
+
+.blog .thumbnail img{
+    width: 300px;
+    height: 256px;
+    padding: 5%;
+   
+}
+.blog-info{
+    width: 300px;
+    padding: 5%;
+    
+}
+
+/* ................................form part.......................... */
+
+form{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+ 
+.select-title{
+    color: rgb(221, 19, 19);
+    width: 60%;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    padding: 10px 20px;
+    background-color: rgb(39, 39, 124);
+    border-radius: 5px;
+}
+.form-reg{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap: 5px;
+    grid-column-gap: 30px;
+    margin: 0 10px;
+    padding-bottom: 20px;
+   
+}
+
+.checkbox-col{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    background-color: rgba(211, 206, 206, 0.3);
+}
+/* ...membership.... */
+
+hr{
+    border: 1px solid rgba(211, 206, 206);
+}
+
+.rules li {
+    width: 600px;
+    
+}
+.pri-rules{
+    width: 600px;
+}
+footer{
+    text-align: center;
+    padding-bottom: 50px;
+}
+.submit-button{
+    text-decoration: none;
+    color: #070707;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: greenyellow;
+}
+
+/* ................................footerpart..................... */
+
+
+.footer-logo img{
+    width: 483px;
+
+}
+.fab{
+    padding-left: 14px;
+}
+/* ...........................media query........................... */
+
+@media only screen and (max-width:688px) {
+    .header{
+        width: 100%;
+        display: flex;
+        
+    }
+
+    .footer{
+        width: 100%;
+
+    }
+    
+    .top-banner,.blogs, .form,.checkbox,.footer{
+            
+            grid-template-columns: repeat(1,1fr);
+
+    }
+    .blog, .top-banner, .form-reg,.checkbox-col,.heading,.footer-logo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    
+    
+}
